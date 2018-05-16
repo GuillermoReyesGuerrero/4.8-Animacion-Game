@@ -13,8 +13,8 @@ public class Ball {
     RectF rect;
     float xVelocity;
     float yVelocity;
-    float ballWidth = 10;
-    float ballHeight = 10;
+    float ballWidth = 12;
+    float ballHeight = 12;
 
     public Ball(int screenX, int screenY){
 

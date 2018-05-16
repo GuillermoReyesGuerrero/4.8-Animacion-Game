@@ -37,18 +37,20 @@ public class Paddle {
     // el ancho y alto de la pantalla
     public Paddle(int screenX, int screenY){
         // 130 pixeles de ancho y 20 pixeles de alto
-        length = 130;
-        height = 20;
+        length = 170;
+        height = 40;
 
         // Inicia al paddle cerca del centro de la pantalla
         x = screenX / 2;
-        y = screenY - 20;
+        y = screenY-70;
+        //android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
 
         rect = new RectF(x, y, x + length, y + height);
 
         // Cuán rápido es el paddle en piexeles por segundo
-        paddleSpeed = 350;
+        paddleSpeed = 400;
     }
+
 
     // Este es un método getter para hacer para hacer el rectángulo que
     // define nuestro paddle disponible en la clase BreakoutView
